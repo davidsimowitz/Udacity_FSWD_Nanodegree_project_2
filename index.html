@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>DRS</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- default styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/icon-fonts.css">
+    <!-- jquery -->
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <header class="container-fluid">
+      <div class="row">
+        <div class="overflow-column">
+          <img class="banner-image" src="img/banner-top-circuit.svg" alt="background image">
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+          <img class="logo" src="img/drs_logo.svg" alt="logo">
+        </div>
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+        </div>
+
+        <!-- navigation buttons: start -->
+        <a class="burger-icon" id="menu_button">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+        <nav id="drop_menu" class="row main-menu">
+          <div class="links"><a href="#who-am-i?" class="round-button"><span class="entypo-user"></span></a></div>
+          <div class="links"><a href="#featured-work" class="round-button"><span class="entypo-archive"></span></a></div>
+          <div class="links"><a href="https://github.com/davidsimowitz" class="round-button"><span class="brandico-github"></span></a></div>
+          <div class="links"><a href="https://www.linkedin.com/in/davidsimowitz" class="round-button"><span class="brandico-linkedin-rect"></span></a></div>
+          <div class="links"><a href="https://twitter.com/SimowitzPrime" class="round-button"><span class="zocial-twitter"></span></a></div>
+          <div class="links"><a href="mailto:davidsimowitz@gmail.com?subject=I just viewed your website and wanted to contact you" class="round-button"><span class="zocial-email"></span></a></div>
+        </nav>
+        <!-- navigation buttons: end -->
+      </div>
+    </header>
+
+    <main class="container-fluid">
+      <div class="row white">
+        <picture class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <source
+           media="(max-width: 350px)"
+           srcset="img/laptop-320w.jpg 1x, img/laptop-640w.jpg 2x, img/laptop-960w.jpg 3x">
+          <source
+           media="(min-width: 351px) and (max-width: 450px)"
+           srcset="img/laptop-400w.jpg 1x, img/laptop-800w.jpg 2x, img/laptop-1200w.jpg 3x">
+          <source
+           media="(min-width: 451px) and (max-width: 575px)"
+           srcset="img/laptop-525w.jpg 1x, img/laptop-1050w.jpg 2x">
+          <source
+           media="(min-width: 576px) and (max-width: 675px)"
+           srcset="img/laptop-650w.jpg 1x, img/laptop-1300w.jpg 2x">
+          <source
+           media="(min-width: 676px) and (max-width: 775px)"
+           srcset="img/laptop-700w.jpg 1x, img/laptop-1400w.jpg 2x">
+          <source
+           media="(min-width: 776px)"
+           srcset="img/laptop-800w.jpg 1x, img/laptop-1600w.jpg 2x">
+          <img class="img-responsive main-image" src="img/laptop-960w.jpg" alt="background image">
+        </picture>
+      </div>
+      <div class="row white">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bottom">
+            <img class="img-responsive bg-image" src="img/bottom-border-background.svg" alt="background image">
+        </div>
+        <div class="bottom-line">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 parallax-container">
+          <div class="parallax" style="background: url(img/blue-circuitry-1600w.gif) center center / cover no-repeat; transform: translate3d(0px, 0px, 0px);"></div>
+        </div>
+      </div>
+
+      <!-- Bio Section -->
+      <div class="row section-gradient">
+        <div class="row about-me">
+          <picture class="portrait">
+            <a id="who-am-i?">
+              <source
+               media="(max-width: 350px)"
+               srcset="img/drs-extra-small.jpg 1x, img/drs-medium.jpg 2x, img/drs-large.jpg 3x">
+              <source
+               media="(min-width: 351px) and (max-width: 450px)"
+               srcset="img/drs-extra-small.jpg 1x, img/drs-medium.jpg 2x, img/drs-large.jpg 3x">
+              <source
+               media="(min-width: 451px) and (max-width: 550px)"
+               srcset="img/drs-small.jpg 1x, img/drs-large.jpg 2x">
+              <source
+               media="(min-width: 551px)"
+              srcset="img/drs-small.jpg 1x, img/drs-large.jpg 2x">
+              <img class="img-responsive" src="img/drs-small.jpg" alt="A photo of myself, David Simowitz.">
+            </a>
+          </picture>
+          <div class="about-me-text">
+            <p>
+              Hello, I'm David.
+            </p>
+            <p>
+              I'm a Software engineer with expertise at quickly becoming up to date on a customized system's functionality, understanding its unique business requirements, and prioritizing, designing, and deploying vital software components based on environmental and time constraints. My experiences further include testing, debugging, responding to, and correcting critical issues.
+            </p>
+            <p>
+              I love challenging roles that allow me to strengthen and grow my skills, especially where I will have an opportunity to make a profound difference.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Section -->
+      <div class="row transition-section">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <a id="featured-work">
+          <h3 class="text-section-title">Featured Work</h3>
+          </a>
+        </div>
+      </div>
+      <div class="row portfolio-body">
+        <div class="container-fluid">
+          <div class="portfolio-column">
+          </div>
+          <div class="portfolio-content">
+
+           <div class="portfolio-item">
+             <img class="img-responsive portfolio-image" src="img/movie-trailer-website-thumb.jpg" onmouseover="this.src='img/movie-trailer-website-thumb-hover.jpg'" onmouseout="this.src='img/movie-trailer-website-thumb.jpg'" alt="movie trailer website" data-toggle="modal" data-target="#modal-lg-project-movie-trailer-website">
+             <h4 class="text-app-name">MOVIE TRAILER WEBSITE</h4>
+             <p class="text-app-link"><a class="github-link" href="https://github.com/davidsimowitz/Udacity_FSWD_Nanodegree_project_1">https://github.com/...</a></p>
+           </div>
+
+           <div class="portfolio-item">
+             <img class="img-responsive portfolio-image" src="img/responsive-website-thumb.jpg" onmouseover="this.src='img/responsive-website-thumb-hover.jpg'" onmouseout="this.src='img/responsive-website-thumb.jpg'" alt="project 2" data-toggle="modal" data-target="#modal-lg-project-responsive-website">
+             <h4 class="text-app-name">RESPONSIVE WEBSITE</h4>
+             <p class="text-app-link"><a class="github-link" href="https://github.com/davidsimowitz/Udacity_FSWD_Nanodegree_project_2_mockup_ver">https://github.com/...</a></p>
+           </div>
+
+           <div class="portfolio-item">
+             <img class="img-responsive portfolio-image" src="img/cyber-thought-thumb.jpg" onmouseover="this.src='img/cyber-thought-thumb-hover.jpg'" onmouseout="this.src='img/cyber-thought-thumb.jpg'" alt="cyber thought, personal brain machine interface advertisement" data-toggle="modal" data-target="#modal-lg-project-cyber-thought">
+             <h4 class="text-app-name">Cyber Thought</h4>
+             <p class="text-app-link"></p>
+           </div>
+
+           <div class="portfolio-item">
+             <img class="img-responsive portfolio-image" src="img/gentek-thumb.jpg" onmouseover="this.src='img/gentek-thumb-hover.jpg'" onmouseout="this.src='img/gentek-thumb.jpg'" alt="gentek, germline genetic engineering therapy advertisement" data-toggle="modal" data-target="#modal-lg-project-gentek">
+             <h4 class="text-app-name">GeneTek</h4>
+             <p class="text-app-link"></p>
+           </div>
+
+           <div class="portfolio-item">
+             <img class="img-responsive portfolio-image" src="img/lunar-travels-thumb.jpg" onmouseover="this.src='img/lunar-travels-thumb-hover.jpg'" onmouseout="this.src='img/lunar-travels-thumb.jpg'" alt="lunar travels, lunar vacation advertisement" data-toggle="modal" data-target="#modal-lg-project-lunar-travels">
+             <h4 class="text-app-name">Lunar Travels</h4>
+             <p class="text-app-link"></p>
+           </div>
+
+          <!-- add additional projects here -->
+          </div>
+          <div class="portfolio-column">
+          </div>
+        </div>
+      </div>
+
+      <!-- Transition Section -->
+      <div class="row transition-section-2">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        </div>
+      </div>
+      <div class="row white">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bottom">
+            <img class="img-responsive bg-image" src="img/top-border-background.svg" alt="background image">
+        </div>
+      </div>
+      <div class="row white white-border-bottom">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        </div>
+      </div>
+    </main>
+
+    <footer class="container-fluid">
+    </footer>
+
+    <!-- Modal - Full Stack Web Developer Nanodegree - Project 1 -->
+    <div class="modal fade" id="modal-lg-project-movie-trailer-website" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content ">
+          <div class="modal-header modal-background modal-portfolio-header">
+            <h4 class="modal-title" id="myModalLabel">Movie Trailer Website</h4>
+          </div>
+          <div class="modal-body modal-background">
+            <picture>
+              <img class="img-responsive project-image" src="img/movie-trailer-website-large.jpg" alt="movie trailer website screenshot">
+            </picture>
+            <p>Full Stack Web Developer Nanodegree - Project 1</p>
+            <p>
+              To build a movie trailer website where users can see your favorite movies and watch the trailers. The list of movie titles, box art, poster images, and movie trailer URLs will be stored using server side code which will then be expressed on the web page to allow users to review the movies and watch the trailers.
+            </p>
+          </div>
+          <div class="modal-footer modal-background modal-portfolio-footer">
+            <a class="btn btn-portfolio" href="https://github.com/davidsimowitz/Udacity_FSWD_Nanodegree_project_1" role="button"><span class="brandico-github"></span></a>
+            <a class="btn btn-portfolio" href="movie-trailer/fresh_tomatoes.html" role="button">Link to Site</a>
+            <button type="button" class="btn btn-portfolio" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal - Full Stack Web Developer Nanodegree - Project 2 -->
+    <div class="modal fade" id="modal-lg-project-responsive-website" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header modal-background modal-portfolio-header">
+            <h4 class="modal-title" id="myModalLabel">Responsive Website</h4>
+          </div>
+          <div class="modal-body modal-background">
+            <picture>
+              <img class="img-responsive project-image" src="img/responsive-website-large.jpg" alt="responsive website screenshot">
+            </picture>
+            <p>Full Stack Web Developer Nanodegree - Project 2</p>
+            <p>To build a responsive portfolio website replicating the design in HTML and CSS using the provided design mockup.</p>
+          </div>
+          <div class="modal-footer modal-background modal-portfolio-footer">
+            <a class="btn btn-portfolio" href="https://github.com/davidsimowitz/Udacity_FSWD_Nanodegree_project_2_mockup_ver" role="button"><span class="brandico-github"></span></a>
+            <a class="btn btn-portfolio" href="responsive/responsive.html" role="button">Link to Site</a>
+            <button type="button" class="btn btn-portfolio" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal - Germline Genetic Engineering - Gentek -->
+    <div class="modal fade" id="modal-lg-project-gentek" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header modal-background modal-portfolio-header">
+            <h4 class="modal-title" id="myModalLabel">Technology: The Jump from Science Fiction to Reality Series</h4>
+          </div>
+          <div class="modal-body modal-background">
+            <img class="img-responsive project-image" src="img/gentek.jpg" alt="responsive website screenshot">
+            <p>Germline Genetic Engineering - Gentek</p>
+            <p>Creativity, imagination, inspiration; these words are used to describe the process of art constantly. Those attributes are also what drives science fiction. Science fiction, for the most part is created as a means to express science in that process. All of my works were engineered and designed to use a scientific concept that exists in science fiction, and is either being researched currently or in the process of being experimented with in reality. Within 20 to 30 years you may very well see an advertisement similar to my own, for a product you would never believe would be created. My opinion is that science fiction is a window into the future. The only difference between the future and the present is time. Given that time I believe that science can make all things possible. One can only wonder what the future will bring, but then again only time will tell.</p>
+          </div>
+          <div class="modal-footer modal-background modal-portfolio-footer">
+            <button type="button" class="btn btn-portfolio" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal - Civilian Space Flight- Lunar Travels -->
+    <div class="modal fade" id="modal-lg-project-lunar-travels" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header modal-background modal-portfolio-header">
+            <h4 class="modal-title" id="myModalLabel">Technology: The Jump from Science Fiction to Reality Series</h4>
+          </div>
+          <div class="modal-body modal-background">
+            <img class="img-responsive project-image" src="img/lunar-travels.jpg" alt="responsive website screenshot">
+            <p>Civilian Space Flight - Lunar Travels</p>
+            <p>Creativity, imagination, inspiration; these words are used to describe the process of art constantly. Those attributes are also what drives science fiction. Science fiction, for the most part is created as a means to express science in that process. All of my works were engineered and designed to use a scientific concept that exists in science fiction, and is either being researched currently or in the process of being experimented with in reality. Within 20 to 30 years you may very well see an advertisement similar to my own, for a product you would never believe would be created. My opinion is that science fiction is a window into the future. The only difference between the future and the present is time. Given that time I believe that science can make all things possible. One can only wonder what the future will bring, but then again only time will tell./p>
+          </div>
+          <div class="modal-footer modal-background modal-portfolio-footer">
+            <button type="button" class="btn btn-portfolio" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal - Brain Machine Interfaces - Cyber Thought -->
+    <div class="modal fade" id="modal-lg-project-cyber-thought" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header modal-background modal-portfolio-header">
+            <h4 class="modal-title" id="myModalLabel">Technology: The Jump from Science Fiction to Reality Series</h4>
+          </div>
+          <div class="modal-body modal-background">
+            <img class="img-responsive project-image" src="img/cyber-thought.jpg" alt="responsive website screenshot">
+            <p>Brain Machine Interfaces - Cyber Thought</p>
+            <p>Creativity, imagination, inspiration; these words are used to describe the process of art constantly. Those attributes are also what drives science fiction. Science fiction, for the most part is created as a means to express science in that process. All of my works were engineered and designed to use a scientific concept that exists in science fiction, and is either being researched currently or in the process of being experimented with in reality. Within 20 to 30 years you may very well see an advertisement similar to my own, for a product you would never believe would be created. My opinion is that science fiction is a window into the future. The only difference between the future and the present is time. Given that time I believe that science can make all things possible. One can only wonder what the future will bring, but then again only time will tell.</p>
+          </div>
+          <div class="modal-footer modal-background modal-portfolio-footer">
+            <button type="button" class="btn btn-portfolio" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of Modal section -->
+
+    <script>
+      /*
+       * controls drop down menu
+       */
+      var menu_button = document.querySelector('#menu_button');
+      /*
+       * Open the drop menu when the menu icon is clicked.
+       */
+      var raise_menu = document.querySelector('#raise_menu');
+      var drop_menu = document.querySelector('#drop_menu');
+
+      menu_button.addEventListener('click', function(e) {
+        drop_menu.classList.toggle('open');
+        e.stopPropagation();
+      });
+
+      raise_menu.addEventListener('click', function() {
+        drop_menu.classList.remove('open');
+      });
+    </script>
+
+    <script>
+       /*
+        * Parallax script
+        */
+       var parallaxElements = $('.parallax'),
+       parallaxQuantity = parallaxElements.length;
+
+       $(window).on('scroll', function () {
+
+         window.requestAnimationFrame(function () {
+
+           for (var i = 0; i < parallaxQuantity; i++) {
+             var currentElement =  parallaxElements.eq(i);
+             var scrolled = $(window).scrollTop();
+
+             currentElement.css({
+               'transform': 'translate3d(0,' + scrolled * -0.4 + 'px, 0)'
+             });
+
+           }
+
+         });
+
+       });
+    </script>
+
+  </body>
+
+</html>
