@@ -11,7 +11,7 @@ To build a responsive portfolio website that will display images, descriptions, 
 Requirements
 ------------
 
-+ [A Web Browser such as Chrome](https://www.google.com/chrome/browser/) is installed[.{[[[[[[
++ A Web Browser such as [Chrome](https://www.google.com/chrome/browser/) is installed.
 + [Git](https://git-scm.com/downloads) is installed.
   (Optional, if you wish to clone the project repository.)
 
@@ -25,6 +25,7 @@ $ git clone https://github.com/davidsimowitz/Udacity_FSWD_Nanodegree_project_2.g
 ```
   + Above command is optional.
   + Alternatively you may download the files into the directory.
+  
 ```bash
 $ cd Udacity_FSWD_Nanodegree_project_2
 ```
