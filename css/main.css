@@ -319,6 +319,7 @@ nav.open {
   margin-right: auto;
   overflow: hidden;
   font-size: 18px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .portrait {
@@ -740,6 +741,11 @@ fieldset[disabled] .btn-portfolio.focus {
 }
 
 .project-description {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5%;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 /* Colors */
