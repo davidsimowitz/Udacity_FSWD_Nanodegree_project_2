@@ -43,3 +43,5 @@ $ cd Udacity_FSWD_Nanodegree_project_2
 
   + The portfolio website will load in your default browser.
 
+* Alternatively, this site may be viewed by going to [davidsimowitz.com](www.davidsimowitz.com).
+
