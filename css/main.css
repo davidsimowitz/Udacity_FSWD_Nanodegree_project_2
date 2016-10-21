@@ -169,7 +169,7 @@ nav.open {
 /* Parallax Effect */
 .parallax-container {
   position: relative;
-  height: 400px;
+  height: 500px;
   z-index: -1;
 }
 
