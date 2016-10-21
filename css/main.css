@@ -5,8 +5,9 @@
   box-sizing: border-box;
 }
 
+
 * {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .row {
@@ -24,18 +25,18 @@
 }
 
 .banner-image {
-  width: 100vw;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   padding: 0;
-  overflow: hidden;
-}
-
-.overflow-column {
-  width: 0;
-  overflow: visible;
+  z-index: 1;
 }
 
 .logo {
+  position: relative;
   padding-top: 10px;
+  z-index: 2;
 }
 
 .text-name {
@@ -76,7 +77,7 @@
   bottom: 0;
   max-width: 650px;
   max-height: 72px;
-  position:relative;
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
@@ -108,16 +109,16 @@ nav {
 }
 
 .round-button {
-  display:block;
-  width:50px;
-  height:50px;
-  line-height:45px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
   border: 2px solid #0404b8;
   border-radius: 50%;
-  color:#fff;
-  text-align:center;
+  color: #fff;
+  text-align: center;
   background: #0404b8;
-  font-size:22px;
+  font-size: 22px;
   font-weight: normal;
 }
 
@@ -126,7 +127,7 @@ nav {
 
 .round-button:hover {
   border: 2px solid #858cff;
-  color:#fff;
+  color: #fff;
   background: #858cff;
   text-decoration: none;
   text-decoration-line: none;
@@ -154,8 +155,8 @@ nav {
   height: 100%;
   position: absolute;
   /* This trasform moves the pull down menu off canvas. */
-  -webkit-transform: translate(-300px, 0);
-  transform: translate(-300px, 0);
+  -webkit-transform: translate(-600px, 0);
+  transform: translate(-600px, 0);
   transition: transform 0.4s ease;
 }
 
@@ -176,6 +177,11 @@ nav.open {
   position: absolute;
   height: 200%;
   width: 100%;
+  background-image: url("img/blue-circuitry-1600w.gif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size:
   z-index: -2;
 }
 
@@ -184,12 +190,10 @@ nav.open {
   margin-left: 10px;
   margin-top: 15px;
   margin-bottom: 8px;
-  /* color: #7d97ad; */
   color: #dce3ff;
 }
 
-.section-gradient{
-  width: 100vw;
+.section-gradient {
   background: rgba(220,227,255,1);
   background: -moz-linear-gradient(
                                     top,
@@ -240,10 +244,11 @@ nav.open {
                                rgba(242,245,255,1) 66%,
                                rgba(255,255,255,1) 100%
                              );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dce3ff', endColorstr='#ffffff', GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#dce3ff", endColorstr="#ffffff", GradientType=0 );
 }
 
 .about-me{
+  width: auto;
   max-width: 1024px;
   align-self: center;
   background: rgba(220,227,255,1);
@@ -296,7 +301,7 @@ nav.open {
                                rgba(242,245,255,1) 66%,
                                rgba(255,255,255,1) 100%
                              );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dce3ff', endColorstr='#ffffff', GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#dce3ff", endColorstr="#ffffff", GradientType=0 );
   padding-left: 10%;
   padding-right: 10%;
   margin-left: auto;
@@ -308,8 +313,9 @@ nav.open {
   height: 82%;
   min-height: 565px;
   border: 12px solid #dce3ff;
-  color:#05042a;
+  color: #05042a;
   background: #fff;
+  align-self: center;
   margin-top: -175px;
   padding-top: 195px;
   padding-left: 35px;
@@ -319,15 +325,15 @@ nav.open {
   margin-right: auto;
   overflow: hidden;
   font-size: 18px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .portrait {
-  width:325px;
-  height:325px;
+  width: 325px;
+  height: 325px;
   border: 8px solid #dce3ff;
   border-radius: 50%;
-  color:#fff;
+  color: #fff;
   background: #fff;
   margin-left: auto;
   margin-right: auto;
@@ -362,7 +368,6 @@ nav.open {
 }
 
 .transition-section {
-  width: 100vw;
   height: 10vh;
   margin-top: 50px;
   background: rgba(133,145,230,1);
@@ -409,11 +414,10 @@ nav.open {
                                rgba(58,73,187,1) 38%,
                                rgba(34,48,153,1) 100%
                              );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8591e6', endColorstr='#223099', GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#8591e6", endColorstr="#223099", GradientType=0 );
 }
 
 .transition-section-2 {
-  width: 100vw;
   height: 10vh;
   background: rgba(133,145,230,1);
   background: -moz-linear-gradient(
@@ -477,7 +481,7 @@ nav.open {
                                rgba(3,4,8,1) 82%,
                                rgba(3,4,8,1) 100%
                              );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8591e6', endColorstr='#030408', GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#8591e6", endColorstr="#030408", GradientType=0 );
 }
 
 .portfolio-title {
@@ -532,7 +536,7 @@ nav.open {
                                rgba(133,145,230,1) 89%,
                                rgba(133,145,230,1) 100%
                              );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#223099', endColorstr='#8591e6', GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#223099", endColorstr="#8591e6", GradientType=0 );
   }
 
 .portfolio-column {
@@ -621,6 +625,11 @@ nav.open {
   height: 100%;
 }
 
+.github-button{
+    height: 32px;
+    width: 32px;
+}
+
 .modal-portfolio-footer {
   color: #fff;
   border-radius: 0;
@@ -687,9 +696,6 @@ fieldset[disabled] .btn-portfolio.focus {
   background-color: #333;
 }
 
-.portfolio-text {
-}
-
 .portfolio-image {
   margin-left: auto;
   margin-right: auto;
@@ -745,7 +751,7 @@ fieldset[disabled] .btn-portfolio.focus {
   margin-right: auto;
   padding: 5%;
   font-size: 16px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 /* Colors */
@@ -811,20 +817,20 @@ fieldset[disabled] .btn-portfolio.focus {
     width: 36px;
   }
   .round-button {
-    width:36px;
-    height:36px;
-    line-height:33px;
+    width: 36px;
+    height: 36px;
+    line-height: 33px;
     border: 2px solid #0404b8;
     border-radius: 50%;
-    font-size:16px;
+    font-size: 16px;
   }
   nav {
     width: 200px;
     height: 100%;
     position: absolute;
     /* This trasform moves the pull down menu off canvas. */
-    -webkit-transform: translate(-200px, 0);
-    transform: translate(-200px, 0);
+    -webkit-transform: translate(-600px, 0);
+    transform: translate(-600px, 0);
     transition: transform 0.4s ease;
   }
   nav.open {
@@ -851,7 +857,7 @@ fieldset[disabled] .btn-portfolio.focus {
     margin-bottom: 10px;
   }
   .about-me-text {
-    width: 96vw;
+    width: 94%;
     height: 95%;
     min-height: 500px;
     border: 2px solid #dce3ff;
@@ -863,8 +869,8 @@ fieldset[disabled] .btn-portfolio.focus {
     font-size: 14px;
   }
   .portrait {
-    width:65vmin;
-    height:65vmin;
+    width: 65vmin;
+    height: 65vmin;
     border: 2px solid #dce3ff;
     margin-top: -90px;
     z-index: 1;
@@ -909,10 +915,10 @@ fieldset[disabled] .btn-portfolio.focus {
     padding-bottom: 25px;
   }
   .round-button {
-    width:38px;
-    height:38px;
-    line-height:35px;
-    font-size:18px;
+    width: 38px;
+    height: 38px;
+    line-height: 35px;
+    font-size: 18px;
   }
   nav.open {
     -webkit-transform: translate(0, 0);
@@ -924,7 +930,7 @@ fieldset[disabled] .btn-portfolio.focus {
     right: 15px;
   }
   .main-image {
-    margin-top: 35px;
+    margin-top: 10vw;
     margin-bottom: 90px;
   }
   .row-bar {
@@ -950,8 +956,8 @@ fieldset[disabled] .btn-portfolio.focus {
     font-size: 14px;
   }
   .portrait {
-    width:60vmin;
-    height:60vmin;
+    width: 60vmin;
+    height: 60vmin;
     border: 3px solid #dce3ff;
     margin-top: -100px;
   }
@@ -996,11 +1002,11 @@ fieldset[disabled] .btn-portfolio.focus {
   .main-menu {
     position: absolute;
     align-self: flex-start;
-    top: 100px;
-    left: 25px;
-    width: 50px;
+    top: 90px;
+    width: auto;
     height: auto;
     padding: 5px;
+    padding-left: 8%;
   }
   .links {
     height: 45px;
@@ -1009,10 +1015,10 @@ fieldset[disabled] .btn-portfolio.focus {
     padding-bottom: 30px;
   }
   .round-button {
-    width:44px;
-    height:44px;
-    line-height:40px;
-    font-size:24px;
+    width: 44px;
+    height: 44px;
+    line-height: 40px;
+    font-size: 24px;
   }
   nav.open {
     -webkit-transform: translate(0, 0);
@@ -1024,7 +1030,7 @@ fieldset[disabled] .btn-portfolio.focus {
     right: 15px;
   }
   .main-image {
-    margin-top: 25px;
+    margin-top: 17vw;
     margin-bottom: 120px;
   }
   .row-bar {
@@ -1053,8 +1059,8 @@ fieldset[disabled] .btn-portfolio.focus {
     font-size: 16px;
   }
   .portrait {
-    width:55vmin;
-    height:55vmin;
+    width: 55vmin;
+    height: 55vmin;
     border: 4px solid #dce3ff;
     margin-top: -125px;
   }
@@ -1083,8 +1089,8 @@ fieldset[disabled] .btn-portfolio.focus {
     font-size: 18px;
   }
   .portrait {
-    width:50vmin;
-    height:50vmin;
+    width: 50vmin;
+    height: 50vmin;
     border: 6px solid #dce3ff;
     margin-top: -135px;
   }
@@ -1109,12 +1115,11 @@ fieldset[disabled] .btn-portfolio.focus {
     position: absolute;
     align-self: center;
     top: 95px;
-    left: 30px;
-    width: 100%;
+    width: 95%;
     height: 50px;
     padding: 5px;
-    padding-left: 20%;
-    padding-right: 10%;
+    padding-left: 22%;
+    padding-right: 0;
   }
   .links {
     height: 39px;
@@ -1124,10 +1129,10 @@ fieldset[disabled] .btn-portfolio.focus {
     padding-right: inherit;
   }
   .round-button {
-    width:39px;
-    height:39px;
-    line-height:35px;
-    font-size:21px;
+    width: 39px;
+    height: 39px;
+    line-height: 35px;
+    font-size: 21px;
   }
   nav {
     width: 100%;
@@ -1148,7 +1153,7 @@ fieldset[disabled] .btn-portfolio.focus {
     right: 20px;
   }
   .main-image {
-    margin-top: 20px;
+    margin-top: 10vw;
     margin-bottom: 55px;
   }
   .row-bar {
@@ -1191,12 +1196,12 @@ fieldset[disabled] .btn-portfolio.focus {
   .main-menu {
     position: absolute;
     align-self: center;
-    top: 85px;
-    width: 100%;
+    top: 10vw;
+    width: 90%;
     height: 60px;
     padding: 5px;
-    padding-left: 25%;
-    padding-right: 10%;
+    padding-left: 27%;
+    padding-right: 0;
   }
   .links {
     height: 45px;
@@ -1206,10 +1211,10 @@ fieldset[disabled] .btn-portfolio.focus {
     padding-right: inherit;
   }
   .round-button {
-    width:44px;
-    height:44px;
-    line-height:41px;
-    font-size:24px;
+    width: 44px;
+    height: 44px;
+    line-height: 41px;
+    font-size: 24px;
   }
   nav {
     width: 100%;
@@ -1231,7 +1236,7 @@ fieldset[disabled] .btn-portfolio.focus {
     font-size: 38px;
   }
   .main-image {
-    margin-top: -15px;
+    margin-top: 5vw;
     margin-bottom: 15px;
   }
   .text-app-name {
@@ -1244,7 +1249,7 @@ fieldset[disabled] .btn-portfolio.focus {
 
 @media screen and (min-width: 800px) and (max-width: 991px) {
   .main-menu {
-    top: 110px;
+    top: 11vw;
   }
   .text-app-name {
     font-size: 21px;
@@ -1272,12 +1277,11 @@ fieldset[disabled] .btn-portfolio.focus {
     position: absolute;
     align-self: center;
     top: 125px;
-    left: 45px;
-    width: 100%;
+    width: 95%;
     height: 60px;
     padding: 5px;
     padding-left: 25%;
-    padding-right: 10%;
+    padding-right: 0;
   }
   .links {
     height: 56px;
@@ -1287,10 +1291,10 @@ fieldset[disabled] .btn-portfolio.focus {
     padding-right: inherit;
   }
   .round-button {
-    width:50px;
-    height:50px;
-    line-height:46px;
-    font-size:29px;
+    width: 50px;
+    height: 50px;
+    line-height: 46px;
+    font-size: 29px;
   }
   nav {
     width: 100%;
@@ -1312,7 +1316,7 @@ fieldset[disabled] .btn-portfolio.focus {
     font-size: 44px;
   }
   .main-image {
-    margin-top: -40px;
+    margin-top: 5vw;
     margin-bottom: 15px;
   }
   .row-bar {
@@ -1344,10 +1348,11 @@ fieldset[disabled] .btn-portfolio.focus {
     padding-left: 27%;
     padding-right: 67px;
   }
-  .section-gradient{
-      padding-left: 5%;
+  .section-gradient {
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
-  .about-me{
+  .about-me {
     max-width: 1024px;
     padding-left: 135px;
     padding-right: 135px;
@@ -1375,13 +1380,14 @@ fieldset[disabled] .btn-portfolio.focus {
     font-size: 48px;
   }
   .main-image {
-    margin-top: -85px;
+    margin-top: 5vw;
     margin-bottom: 25px;
   }
-  .section-gradient{
-      padding-left: 10%;
+  .section-gradient {
+    padding-left: 10vw;
+    padding-right: 15vw;
   }
-  .about-me{
+  .about-me {
     width: 1024px;
     padding-left: 135px;
     padding-right: 135px;
@@ -1414,13 +1420,14 @@ fieldset[disabled] .btn-portfolio.focus {
     padding-left: 32%;
   }
   .main-image {
-    margin-top: -135px;
+    margin-top: 5vw;
     margin-bottom: 35px;
   }
-  .section-gradient{
-      padding-left: 15%;
+  .section-gradient {
+    padding-left: 10vw;
+    padding-right: 15vw;
   }
-  .about-me{
+  .about-me {
     width: 1024px;
     padding-left: 135px;
     padding-right: 135px;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
   <head>
     <meta charset="utf-8">
@@ -11,20 +11,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/icon-fonts.css">
-    <!-- jquery -->
-    <script src="js/jquery-3.1.0.min.js"></script>
     <!-- bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/bootstrap.min.js"></script>
   </head>
 
   <body>
     <header class="container-fluid">
       <div class="row">
-        <div class="overflow-column">
-          <img class="banner-image" src="img/banner-top-circuit.svg" alt="background image">
-        </div>
+        <img class="banner-image" src="img/banner-top-circuit.svg" alt="background image">
         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
           <img class="logo" src="img/drs_logo.svg" alt="logo">
         </div>
@@ -35,20 +29,26 @@
         <a class="burger-icon" id="menu_button">
           <i class="fa fa-bars" aria-hidden="true"></i>
         </a>
-        <nav id="drop_menu" class="row main-menu">
-          <div class="links"><a href="#who-am-i?" class="round-button"><span class="entypo-user"></span></a></div>
-          <div class="links"><a href="#featured-work" class="round-button"><span class="entypo-archive"></span></a></div>
-          <div class="links"><a href="https://github.com/davidsimowitz" class="round-button"><span class="brandico-github"></span></a></div>
-          <div class="links"><a href="https://www.linkedin.com/in/davidsimowitz" class="round-button"><span class="brandico-linkedin-rect"></span></a></div>
-          <div class="links"><a href="https://twitter.com/SimowitzPrime" class="round-button"><span class="zocial-twitter"></span></a></div>
-          <div class="links"><a href="mailto:davidsimowitz@gmail.com?subject=I just viewed your website and wanted to contact you" class="round-button"><span class="zocial-email"></span></a></div>
-        </nav>
+
+          <nav id="drop_menu" class="main-menu">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="links"><a href="#who-am-i?" class=""><img src="img/nav-about-me.svg" class="round-button" alt="about me link"></a></div>
+                <div class="links"><a href="#featured-work"><img src="img/nav-portfolio.svg" class="round-button" alt="portfolio link"></a></div>
+                <div class="links"><a href="https://github.com/davidsimowitz"><img src="img/nav-github.svg" class="round-button" alt="github link"></a></div>
+                <div class="links"><a href="https://www.linkedin.com/in/davidsimowitz"><img src="img/nav-linkedin.svg" class="round-button" alt="linkedin link"></a></div>
+                <div class="links"><a href="https://twitter.com/SimowitzPrime"><img src="img/nav-twitter.svg" class="round-button" alt="twitter link"></a></div>
+                <div class="links"><a href="mailto:davidsimowitz@gmail.com?subject=I just viewed your website and wanted to contact you"><img src="img/nav-email.svg" class="round-button" alt="email link"></a></div>
+              </div>
+            </div>
+          </nav>
         <!-- navigation buttons: end -->
+
       </div>
     </header>
 
     <main class="container-fluid">
-      <div class="row white">
+      <div class="row white"> <!-- row -->
         <picture class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <source
            media="(max-width: 350px)"
@@ -78,42 +78,67 @@
         <div class="bottom-line">
         </div>
       </div>
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 parallax-container">
-          <div class="parallax" style="background: url(img/blue-circuitry-1600w.gif) center center / cover no-repeat; transform: translate3d(0px, 0px, 0px);"></div>
-        </div>
+
+      <!-- Parallax Scrolling Effect -->
+      <div class="row parallax-container">
+            <div class="parallax">
+                <picture>
+                  <source
+                   media="(max-width: 450px)"
+                   srcset="img/circuitry-450w-1x.gif 1x, img/circuitry-900w-2x.gif 2x, img/circuitry-1350w-3x.gif 3x,">
+                  <source
+                   media="(min-width: 451px) and (max-width: 800px)"
+                   srcset="img/circuitry-800w-1x.gif 1x, img/circuitry-1600w-2x.gif 2x">
+                  <source
+                   media="(min-width: 801px) and (max-width: 1200px)"
+                   srcset="img/circuitry-1200w-1x.gif 1x, img/circuitry-2400w-2x.gif 2x">
+                  <source
+                   media="(min-width: 1201px) and (max-width: 1600px)"
+                   srcset="img/circuitry-1600w-1x.gif 1x, img/circuitry-3200w-2x.gif 2x">
+                  <source
+                   media="(min-width: 1601px) and (max-width: 2000px)"
+                   srcset="img/circuitry-2000w-1x.gif">
+                  <source
+                   media="(min-width: 2001px)"
+                   srcset="img/circuitry-3200w-2x.gif">
+                  <img class="img" src="img/circuitry-1600w-1x.gif" alt="circuitry scroll effect">
+                </picture>
+            </div>
       </div>
 
       <!-- Bio Section -->
       <div class="row section-gradient">
-        <div class="row about-me">
-          <picture class="portrait">
-            <a id="who-am-i?">
-              <source
-               media="(max-width: 350px)"
-               srcset="img/drs-extra-small.jpg 1x, img/drs-medium.jpg 2x, img/drs-large.jpg 3x">
-              <source
-               media="(min-width: 351px) and (max-width: 450px)"
-               srcset="img/drs-extra-small.jpg 1x, img/drs-medium.jpg 2x, img/drs-large.jpg 3x">
-              <source
-               media="(min-width: 451px) and (max-width: 550px)"
-               srcset="img/drs-small.jpg 1x, img/drs-large.jpg 2x">
-              <source
-               media="(min-width: 551px)"
-              srcset="img/drs-small.jpg 1x, img/drs-large.jpg 2x">
-              <img class="img-responsive" src="img/drs-small.jpg" alt="A photo of myself, David Simowitz.">
-            </a>
-          </picture>
-          <div class="about-me-text">
-            <p>
-              Hello, I'm David.
-            </p>
-            <p>
-              I'm a Software engineer with expertise at quickly becoming up to date on a customized system's functionality, understanding its unique business requirements, and prioritizing, designing, and deploying vital software components based on environmental and time constraints. My experiences further include testing, debugging, responding to, and correcting critical issues.
-            </p>
-            <p>
-              I love challenging roles that allow me to strengthen and grow my skills, especially where I will have an opportunity to make a profound difference.
-            </p>
+        <div class="container about-me">
+          <div class="row">
+            <picture class="portrait">
+              <a id="who-am-i?">
+                <source
+                 media="(max-width: 350px)"
+                 srcset="img/drs-extra-small.jpg 1x, img/drs-medium.jpg 2x, img/drs-large.jpg 3x">
+                <source
+                 media="(min-width: 351px) and (max-width: 450px)"
+                 srcset="img/drs-extra-small.jpg 1x, img/drs-medium.jpg 2x, img/drs-large.jpg 3x">
+                <source
+                 media="(min-width: 451px) and (max-width: 550px)"
+                 srcset="img/drs-small.jpg 1x, img/drs-large.jpg 2x">
+                <source
+                 media="(min-width: 551px)"
+                 srcset="img/drs-small.jpg 1x, img/drs-large.jpg 2x">
+                <img class="img-responsive" src="img/drs-small.jpg" alt="A photo of myself, David Simowitz.">
+              </a>
+            </picture>
+
+            <div class="about-me-text">
+              <p>
+                Hello, I'm David.
+              </p>
+              <p>
+                I'm a Software engineer with expertise at quickly becoming up to date on a customized system's functionality, understanding its unique business requirements, and prioritizing, designing, and deploying vital software components based on environmental and time constraints. My experiences further include testing, debugging, responding to, and correcting critical issues.
+              </p>
+              <p>
+                I love challenging roles that allow me to strengthen and grow my skills, especially where I will have an opportunity to make a profound difference.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -208,9 +233,9 @@
             </div>
           </div>
           <div class="modal-footer modal-background modal-portfolio-footer">
-            <a class="btn btn-portfolio" href="https://github.com/davidsimowitz/Udacity_FSWD_Nanodegree_project_1" role="button"><span class="brandico-github"></span></a>
             <a class="btn btn-portfolio" href="movie-trailer/fresh_tomatoes.html" role="button">Link to Site</a>
             <button type="button" class="btn btn-portfolio" data-dismiss="modal">Close</button>
+            <a class="btn btn-portfolio" href="https://github.com/davidsimowitz/Udacity_FSWD_Nanodegree_project_1" role="button"><img src="img/nav-github.svg" onmouseover="this.src='img/nav-github-hover.svg'" onmouseout="this.src='img/nav-github.svg'" class="github-button" alt="github link"></a>
           </div>
         </div>
       </div>
@@ -236,9 +261,9 @@
             </div>
           </div>
           <div class="modal-footer modal-background modal-portfolio-footer">
-            <a class="btn btn-portfolio" href="https://github.com/davidsimowitz/Udacity_FSWD_Nanodegree_project_2_mockup_ver" role="button"><span class="brandico-github"></span></a>
             <a class="btn btn-portfolio" href="responsive/responsive.html" role="button">Link to Site</a>
             <button type="button" class="btn btn-portfolio" data-dismiss="modal">Close</button>
+            <a class="btn btn-portfolio" href="https://github.com/davidsimowitz/Udacity_FSWD_Nanodegree_project_2_mockup_ver" role="button"><img src="img/nav-github.svg" onmouseover="this.src='img/nav-github-hover.svg'" onmouseout="this.src='img/nav-github.svg'" class="github-button" alt="github link"></a>
           </div>
         </div>
       </div>
@@ -320,6 +345,11 @@
     </div>
     <!-- end of Modal section -->
 
+    <!-- jquery -->
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <!-- bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- off canvas navigation menu -->
     <script>
       /*
        * controls drop down menu
@@ -341,6 +371,7 @@
       });
     </script>
 
+    <!-- parallax background scroll effect -->
     <script>
        /*
         * Parallax script modified from tutorial written by Tania Rascia.
