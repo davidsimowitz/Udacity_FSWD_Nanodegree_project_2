@@ -102,6 +102,10 @@ nav {
   box-sizing: border-box;
 }
 
+.main-menu {
+  left: 0;
+}
+
 .links {
   height: 50px;
   width: 50px;
@@ -154,14 +158,23 @@ nav {
   width: 300px;
   height: 100%;
   position: absolute;
-  /* This trasform moves the pull down menu off canvas. */
-  -webkit-transform: translate(-600px, 0);
-  transform: translate(-600px, 0);
+  /* This transform moves the pull down menu off canvas. */
+  -webkit-transform: translate(-1600px, 0);
+  -moz-transform: translate(-1600px, 0);
+  -ms-transform: translate(-1600px, 0);
+  -o-transform: translate(-1600px, 0);
+  transform: translate(-1600px, 0);
+  -webkit-transition: transform 0.4s ease;
+  -moz-transition: transform 0.4s ease;
+  -o-transition: transform 0.4s ease;
   transition: transform 0.4s ease;
 }
 
 nav.open {
   -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
   transform: translate(0, 0);
   z-index: 2;
 }
@@ -309,6 +322,7 @@ nav.open {
 }
 
 .about-me-text {
+  position: relative;
   width: 75vw;
   height: 82%;
   min-height: 565px;
@@ -326,9 +340,11 @@ nav.open {
   overflow: hidden;
   font-size: 18px;
   font-family: "Ubuntu", sans-serif;
+  z-index: 1;
 }
 
 .portrait {
+  position: relative;
   width: 325px;
   height: 325px;
   border: 8px solid #dce3ff;
@@ -338,7 +354,7 @@ nav.open {
   margin-left: auto;
   margin-right: auto;
   margin-top: -135px;
-  z-index: 1;
+  z-index: 2;
   overflow: hidden;
 }
 
@@ -826,17 +842,12 @@ fieldset[disabled] .btn-portfolio.focus {
   }
   nav {
     width: 200px;
-    height: 100%;
-    position: absolute;
-    /* This trasform moves the pull down menu off canvas. */
+    /* This transform moves the pull down menu off canvas. */
     -webkit-transform: translate(-600px, 0);
+    -moz-transform: translate(-600px, 0);
+    -ms-transform: translate(-600px, 0);
+    -o-transform: translate(-600px, 0);
     transform: translate(-600px, 0);
-    transition: transform 0.4s ease;
-  }
-  nav.open {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-    z-index: 1;
   }
   .burger-icon {
     top: 10px;
@@ -873,7 +884,6 @@ fieldset[disabled] .btn-portfolio.focus {
     height: 65vmin;
     border: 2px solid #dce3ff;
     margin-top: -90px;
-    z-index: 1;
   }
   .portfolio-image {
     width: 100%;
@@ -920,10 +930,13 @@ fieldset[disabled] .btn-portfolio.focus {
     line-height: 35px;
     font-size: 18px;
   }
-  nav.open {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-    z-index: 1;
+  nav {
+    /* This transform moves the pull down menu off canvas. */
+    -webkit-transform: translate(-600px, 0);
+    -moz-transform: translate(-600px, 0);
+    -ms-transform: translate(-600px, 0);
+    -o-transform: translate(-600px, 0);
+    transform: translate(-600px, 0);
   }
   .burger-icon {
     top: 16px;
@@ -1020,10 +1033,13 @@ fieldset[disabled] .btn-portfolio.focus {
     line-height: 40px;
     font-size: 24px;
   }
-  nav.open {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-    z-index: 1;
+  nav {
+    /* This transform moves the pull down menu off canvas. */
+    -webkit-transform: translate(-600px, 0);
+    -moz-transform: translate(-600px, 0);
+    -ms-transform: translate(-600px, 0);
+    -o-transform: translate(-600px, 0);
+    transform: translate(-600px, 0);
   }
   .burger-icon {
     top: 20px;
@@ -1137,16 +1153,6 @@ fieldset[disabled] .btn-portfolio.focus {
   nav {
     width: 100%;
     height: 100px;
-    position: absolute;
-    /* This trasform moves the pull down menu off canvas. */
-    -webkit-transform: translate(-100%, 0);
-    transform: translate(-100%, 0);
-    transition: transform 0.4s ease;
-  }
-  nav.open {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-    z-index: 1;
   }
   .burger-icon {
     top: 35px;
@@ -1219,16 +1225,6 @@ fieldset[disabled] .btn-portfolio.focus {
   nav {
     width: 100%;
     height: 100px;
-    position: absolute;
-    /* This trasform moves the pull down menu off canvas. */
-    -webkit-transform: translate(-100%, 0);
-    transform: translate(-100%, 0);
-    transition: transform 0.4s ease;
-  }
-  nav.open {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-    z-index: 1;
   }
   .burger-icon {
     top: 45px;
@@ -1299,16 +1295,6 @@ fieldset[disabled] .btn-portfolio.focus {
   nav {
     width: 100%;
     height: 100px;
-    position: absolute;
-    /* This trasform moves the pull down menu off canvas. */
-    -webkit-transform: translate(-100%, 0);
-    transform: translate(-100%, 0);
-    transition: transform 0.4s ease;
-  }
-  nav.open {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-    z-index: 1;
   }
   .burger-icon {
     top: 65px;
