@@ -35,7 +35,7 @@
 
 .logo {
   position: relative;
-  padding-top: 10px;
+  margin-top: 10px;
   z-index: 2;
 }
 
@@ -168,6 +168,7 @@ nav {
   -moz-transition: transform 0.4s ease;
   -o-transition: transform 0.4s ease;
   transition: transform 0.4s ease;
+  z-index: 1;
 }
 
 nav.open {
@@ -808,7 +809,7 @@ fieldset[disabled] .btn-portfolio.focus {
 @media screen and (max-width: 350px) {
   .logo {
     width: 50px;
-    length: 50px;
+    min-height: 51px;
   }
   .text-name {
     font-size: 20px;
@@ -899,7 +900,7 @@ fieldset[disabled] .btn-portfolio.focus {
 @media screen and (min-width: 351px) and (max-width: 450px) {
   .logo {
     width: 60px;
-    length: 60px;
+    min-height: 62px;
   }
   .text-name {
     font-size: 26px;
@@ -1001,7 +1002,7 @@ fieldset[disabled] .btn-portfolio.focus {
 @media screen and (min-width: 451px) and (max-width: 550px) {
   .logo {
     width: 68px;
-    length: 68px;
+    min-height: 70px;
   }
   .text-name {
     font-size: 38px;
@@ -1114,9 +1115,10 @@ fieldset[disabled] .btn-portfolio.focus {
 
 @media screen and (min-width: 526px) and (max-width: 991px) {
   .logo {
-    padding-top: 18px;
+    margin-top: 18px;
     margin-left: 30px;
     width: 86px;
+    min-height: 88px;
   }
   .text-name {
     font-size: 44px;
@@ -1188,9 +1190,10 @@ fieldset[disabled] .btn-portfolio.focus {
 
 @media screen and (min-width: 700px) and (max-width: 991px) {
   .logo {
-    padding-top: 25px;
+    margin-top: 25px;
     margin-left: 35px;
     width: 100px;
+    min-height: 103px;
   }
   .text-name {
     font-size: 56px;
@@ -1257,9 +1260,10 @@ fieldset[disabled] .btn-portfolio.focus {
 
 @media screen and (min-width: 992px) {
   .logo {
-    padding-top: 35px;
+    margin-top: 35px;
     margin-left: 45px;
     width: 125px;
+    min-height: 128px;
   }
   .text-name {
     font-size: 72px;
@@ -1353,9 +1357,10 @@ fieldset[disabled] .btn-portfolio.focus {
 
 @media screen and (min-width: 1200px) {
   .logo {
-    padding-top: 40px;
+    margin-top: 40px;
     margin-left: 50px;
     width: 130px;
+    min-height: 133px;
   }
   .main-menu {
     padding-left: 30%;
@@ -1398,9 +1403,10 @@ fieldset[disabled] .btn-portfolio.focus {
 
 @media screen and (min-width: 1400px) {
   .logo {
-    padding-top: 45px;
+    margin-top: 45px;
     margin-left: 55px;
     width: 135px;
+    min-height: 138px;
   }
   .main-menu {
     padding-left: 32%;
