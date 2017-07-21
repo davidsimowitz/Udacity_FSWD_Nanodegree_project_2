@@ -1,4 +1,4 @@
-Udacity FSWD Nanodegree project 2 (Expanded)
+Portfolio Site (Expanded)
 ============================================
 
 Udacity - Full Stack Web Developer Nanodegree
@@ -21,13 +21,13 @@ Usage
 * Run the following commands to clone the complete web site.
 
 ```bash
-$ git clone https://github.com/davidsimowitz/Udacity_FSWD_Nanodegree_project_2.git
+$ git clone https://github.com/davidsimowitz/fullstack-nanodegree-project-2.git
 ```
   + Above command is optional.
   + Alternatively you may download the files into the directory.
   
 ```bash
-$ cd Udacity_FSWD_Nanodegree_project_2
+$ cd fullstack-nanodegree-project-2
 ```
   + Verify the following files/folders are present before continuing:
     * css
