@@ -5,7 +5,7 @@ Udacity - Full Stack Web Developer Nanodegree
 ---------------------------------------------
 P2: Portfolio Site
 
-To build a responsive portfolio website that will display images, descriptions, and links to each of the portfolio projects completed throughout the course of the Full Stack Web Developer Nanodegree.
+Cross-device compatibility is essential when designing a site, especially since more than half of all internet traffic originates from mobile devices. Therefore, this project's focus is to design and implement a portfolio website—displaying images, descriptions, and links to each of the projects completed throughout the course of the Full Stack Web Developer Nanodegree—that adheres to responsive web design.
 
 
 Requirements
@@ -25,7 +25,7 @@ $ git clone https://github.com/davidsimowitz/fullstack-nanodegree-project-2.git
 ```
   + Above command is optional.
   + Alternatively you may download the files into the directory.
-  
+
 ```bash
 $ cd fullstack-nanodegree-project-2
 ```
