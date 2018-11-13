@@ -1,6 +1,7 @@
 Portfolio Site (Expanded)
 ============================================
 
+
 Udacity - Full Stack Web Developer Nanodegree
 ---------------------------------------------
 P2: Portfolio Site
@@ -14,6 +15,7 @@ Requirements
 + A Web Browser such as [Chrome](https://www.google.com/chrome/browser/) is installed.
 + [Git](https://git-scm.com/downloads) is installed.
   (Optional, if you wish to clone the project repository.)
+
 
 Usage
 -----
