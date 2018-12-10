@@ -6,7 +6,7 @@ Udacity - Full Stack Web Developer Nanodegree
 ---------------------------------------------
 P2: Portfolio Site
 
-Cross-device compatibility is essential when designing a site, especially since more than half of all internet traffic originates from mobile devices. Therefore, this project's focus is to design and implement a portfolio website—displaying images, descriptions, and links to each of the projects completed throughout the course of the Full Stack Web Developer Nanodegree—that adheres to responsive web design.
+Cross-device compatibility is essential when designing a site, especially since more than half of all internet traffic originates from mobile devices. Therefore, this project's focus was to design and implement a portfolio website—displaying images, descriptions, and links to each of the projects completed throughout the course of the Full Stack Web Developer Nanodegree—that adheres to responsive web design.
 
 
 Requirements
