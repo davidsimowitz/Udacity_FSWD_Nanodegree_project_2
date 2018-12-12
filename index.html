@@ -425,16 +425,11 @@
       /*
        * Open the drop menu when the menu icon is clicked.
        */
-      var raise_menu = document.querySelector('#raise_menu');
       var drop_menu = document.querySelector('#drop_menu');
 
       menu_button.addEventListener('click', function(e) {
         drop_menu.classList.toggle('open');
         e.stopPropagation();
-      });
-
-      raise_menu.addEventListener('click', function() {
-        drop_menu.classList.remove('open');
       });
     </script>
 
